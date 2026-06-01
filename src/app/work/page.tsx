@@ -52,15 +52,53 @@ function Meta({ video }: { video: ChannelVideo }) {
   return <p className="mt-1 text-xs text-zinc-500">{parts.join(" · ")}</p>;
 }
 
+// Builds ItemList + VideoObject structured data for rich video results.
+function buildVideoListJsonLd(videos: ChannelVideo[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Animated work by ${siteConfig.name}`,
+    itemListElement: videos.map((video, index) => {
+      const videoObject: Record<string, unknown> = {
+        "@type": "VideoObject",
+        name: video.title,
+        description: video.description || video.title,
+        thumbnailUrl: [video.thumbnail],
+        contentUrl: video.watchUrl,
+        embedUrl: `https://www.youtube.com/embed/${video.id}`,
+        url: video.watchUrl,
+      };
+      if (video.published) videoObject.uploadDate = video.published;
+      if (video.views) {
+        videoObject.interactionStatistic = {
+          "@type": "InteractionCounter",
+          interactionType: { "@type": "WatchAction" },
+          userInteractionCount: Number(video.views),
+        };
+      }
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        item: videoObject,
+      };
+    }),
+  };
+}
+
 export default async function WorkPage() {
   const live = await getChannelVideos(12);
   const videos = live.length > 0 ? live : fallbackVideos();
 
   const longForm = videos.filter((v) => !v.isShort);
   const shorts = videos.filter((v) => v.isShort);
+  const jsonLd = buildVideoListJsonLd(videos);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="animate-fade-up">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           My <span className="text-gradient">work</span>
