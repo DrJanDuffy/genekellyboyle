@@ -64,9 +64,8 @@ export async function getChannelVideos(limit = 12): Promise<ChannelVideo[]> {
             .trim(),
         ),
         published: pick(entry, /<published>([^<]+)<\/published>/) ?? "",
-        thumbnail:
-          pick(entry, /<media:thumbnail url="([^"]+)"/) ??
-          `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+        // Canonical (non-sharded) host so it matches our <link rel="preconnect">.
+        thumbnail: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
         watchUrl: link || `https://www.youtube.com/watch?v=${id}`,
         isShort,
         views: pick(entry, /<media:statistics views="(\d+)"/),
