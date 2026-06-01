@@ -95,6 +95,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        {/* Thumbnails for video facades load from i.ytimg.com on first paint. */}
+        <link rel="preconnect" href="https://i.ytimg.com" />
+        {/* Player only loads on click; warm up DNS cheaply ahead of time. */}
+        <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
+      </head>
       <body className="flex min-h-full flex-col">
         <script
           type="application/ld+json"

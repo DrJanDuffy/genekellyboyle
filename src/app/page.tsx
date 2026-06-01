@@ -106,6 +106,7 @@ export default async function Home() {
                 id={latest.id}
                 title={latest.title}
                 vertical={latest.isShort}
+                thumbnail={latest.thumbnail}
               />
             </div>
           </div>

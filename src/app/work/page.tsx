@@ -124,7 +124,11 @@ export default async function WorkPage() {
                 key={video.id}
                 className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5"
               >
-                <YouTubeEmbed id={video.id} title={video.title} />
+                <YouTubeEmbed
+                  id={video.id}
+                  title={video.title}
+                  thumbnail={video.thumbnail}
+                />
                 <h3 className="mt-5 text-lg font-semibold leading-snug">
                   {video.title}
                 </h3>
@@ -154,7 +158,12 @@ export default async function WorkPage() {
           <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
             {shorts.map((video) => (
               <article key={video.id} className="flex flex-col">
-                <YouTubeEmbed id={video.id} title={video.title} vertical />
+                <YouTubeEmbed
+                  id={video.id}
+                  title={video.title}
+                  vertical
+                  thumbnail={video.thumbnail}
+                />
                 <h3 className="mt-3 text-sm font-semibold leading-snug">
                   {video.title}
                 </h3>
