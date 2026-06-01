@@ -7,7 +7,7 @@ export const siteConfig = {
   tagline:
     "Pushing the boundaries of stick-figure animation with dynamic action, comedy, and cinematic storytelling.",
   location: "Irvine, California, United States",
-  url: "https://genekellyboyle.com",
+  url: "https://www.gkanimates.com",
   email: "genekellyboyle@gmail.com",
   about: `I'm passionate about pushing the boundaries of digital animation and storytelling. As the creator of "Stickman Epic Legends," I'm revolutionizing stick figure animation on YouTube, blending dynamic action, comedy, and cinematic techniques. I combine traditional animation principles with modern digital tools, releasing new high-quality animated content monthly and growing a dedicated audience.`,
   channelHandle: "@genekellyboyle",
