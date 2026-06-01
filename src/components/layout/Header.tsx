@@ -3,14 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { siteConfig } from "@/config/site";
+import { siteConfig, primaryNav } from "@/config/site";
 
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/work", label: "Work" },
-  { href: "/contact", label: "Contact" },
-];
+const navItems = primaryNav;
 
 export function Header() {
   const pathname = usePathname();
@@ -23,7 +18,7 @@ export function Header() {
           <span className="text-gradient">GK</span> Animates
         </Link>
 
-        <ul className="hidden items-center gap-1 sm:flex">
+        <ul className="hidden items-center gap-0.5 lg:flex">
           {navItems.map((item) => {
             const active =
               item.href === "/"
@@ -33,7 +28,7 @@ export function Header() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  className={`rounded-full px-3 py-2 text-sm font-medium transition-colors ${
                     active
                       ? "bg-white/10 text-white"
                       : "text-zinc-400 hover:text-white"
@@ -49,7 +44,7 @@ export function Header() {
               href={siteConfig.links.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 rounded-full bg-gradient-to-r from-accent to-accent-2 px-4 py-2 text-sm font-semibold text-black transition-opacity hover:opacity-90"
+              className="ml-1 rounded-full bg-gradient-to-r from-accent to-accent-2 px-4 py-2 text-sm font-semibold text-black transition-opacity hover:opacity-90"
             >
               Subscribe
             </a>
@@ -61,7 +56,7 @@ export function Header() {
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="rounded-md p-2 text-zinc-300 sm:hidden"
+          className="rounded-md p-2 text-zinc-300 lg:hidden"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             {open ? (
@@ -74,7 +69,7 @@ export function Header() {
       </nav>
 
       {open && (
-        <ul className="flex flex-col gap-1 border-t border-white/10 px-6 py-4 sm:hidden">
+        <ul className="flex flex-col gap-1 border-t border-white/10 px-6 py-4 lg:hidden">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
