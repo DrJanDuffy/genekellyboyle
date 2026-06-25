@@ -1,0 +1,94 @@
+{
+  "search_id": "search_6872643221244d669fa2ca2d07890d7d",
+  "session_id": "session_6872643221244d669fa2ca2d07890d7d",
+  "status": "ok",
+  "results": [
+    {
+      "url": "https://natesnewsletter.substack.com/p/i-read-everything-google-anthropic",
+      "title": "Get the Cheat Code on Long-Running AI Agents\u2014Here's ...",
+      "publish_date": null,
+      "excerpts": [
+        "Twelve design prompts to build your own context architecture: State Persistence Analysis \u2014 Classify what your agent must remember vs. discard ."
+      ]
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/p/the-claude-code-complete-guide-learn",
+      "title": "The Claude Code Complete Guide: Learn Vibe-Coding & ...",
+      "publish_date": null,
+      "excerpts": [
+        "From 5-minute setup to multi-agent workflows, learn best practices, cost control & vibe-coding tricks to build faster, safer, and with plenty of fun along the"
+      ]
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/p/cracking-the-agent-code-16-production",
+      "title": "16 Production Prompting Signals Hidden in GPT-5's ...",
+      "publish_date": null,
+      "excerpts": [
+        "The shift from conversational AI to agentic AI is real, and it requires us to level up our prompting specification skills accordingly. Dig in to"
+      ]
+    },
+    {
+      "url": "http://natesnewsletter.substack.com",
+      "title": "Nate\u2019s Substack | Substack",
+      "publish_date": null,
+      "excerpts": [
+        "# Nate\u2019s Substack\n\nDaily newsletters on AI strategy, news, and implementation for practitioners and leaders who are past the hype and ready to build.\n\nOver 149,000 subscribers\n\nSubscribe\n\nBy subscribing, you agree Substack's [Terms of Use](https://substack.com/tos) , and acknowledge its [Information Collection Notice](https://substack.com/ccpa) and [Privacy Policy](https://substack.com/privacy) .\n\nNo thanks"
+      ]
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/p/the-chatgpt-5-prompting-manual-building",
+      "title": "The ChatGPT-5 Prompting Manual: Building the Bridge ...",
+      "publish_date": null,
+      "excerpts": [
+        "ChatGPT-5 prompting is too hard . This guide focuses on making it easy, and gives you the architectural secrets and battle-tested templates"
+      ]
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/p/software-30-vs-ai-agentic-mesh-why",
+      "title": "Software 3.0 vs AI Agentic Mesh: Why McKinsey Got It Wrong",
+      "publish_date": null,
+      "excerpts": [
+        "In this new paradigm, prompts replace code as the primary way to direct computational behavior . LLMs serve as interpreters that understand"
+      ]
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/p/your-engineers-are-building-your",
+      "title": "Grab the prompt kit I built to audit your AI platform lock-in",
+      "publish_date": null,
+      "excerpts": [
+        "This piece is about what happened next: OpenAI engineers accidentally leaked the existence of GPT-5.4 by committing internal code to a public"
+      ]
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/p/there-are-4-kinds-of-agents-and-youre",
+      "title": "You're using the wrong kind of agent. Here's the one ...",
+      "publish_date": null,
+      "excerpts": [
+        "You're using the wrong kind of agent. Here's the one question that tells you which one you actually need + 3 diagnostic prompts . Dark factories"
+      ]
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/p/beyond-the-perfect-prompt-the-definitive",
+      "title": "The Definitive Guide to Context Engineering\u2014The Next ...",
+      "publish_date": null,
+      "excerpts": [
+        "We built evaluation frameworks, version control systems, and optimization pipelines. We called it \" prompting as code \" and felt sophisticated."
+      ]
+    },
+    {
+      "url": "https://natesnewsletter.substack.com/p/i-summarized-3-ai-agent-papers-60",
+      "title": "Anthropic, Google, and Vercel All Disagree on AI Agents ...",
+      "publish_date": null,
+      "excerpts": [
+        "Anthropic, Google, and Vercel All Disagree on AI Agents\u2014Here's What Really Matters in 8 Minutes, Plus a Custom Prompt to Figure out YOUR Career"
+      ]
+    }
+  ],
+  "usage": [
+    {
+      "name": "sku_search",
+      "count": 1
+    }
+  ],
+  "warnings": []
+}
