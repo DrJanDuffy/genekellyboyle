@@ -5,6 +5,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/config/site";
 import { organizationSchema } from "@/lib/seo";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -115,6 +117,8 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <VercelAnalytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
