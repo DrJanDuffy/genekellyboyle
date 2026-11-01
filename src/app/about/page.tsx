@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig, experience, skills, highlights } from "@/config/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About",
   description: `About ${siteConfig.name} — ${siteConfig.role} based in ${siteConfig.location}.`,
 };

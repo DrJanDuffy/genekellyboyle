@@ -9,6 +9,7 @@ import {
 } from "@/lib/youtube";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/work" },
   title: "Work",
   description: `Animated work by ${siteConfig.name} — Stickman: Epic Legends and more from GK Animates.`,
 };
